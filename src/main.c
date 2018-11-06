@@ -1,9 +1,11 @@
 //  Copyright (c) 2018 Antoine Tran Tan
 //
 
-#include "my_header.h"
+#include "my_header.h" 
+#include "stdio.h" 
 
 int main(void)
 {
-    return 0;
+    printf("Hello I'm TRANTAN ! ");
+	return 0;
 }
