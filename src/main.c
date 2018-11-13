@@ -2,25 +2,17 @@
 //
 
 #include "my_header.h"
-#include <stdio.h>
-#include <math.h>
-
-#define ECART 1e-10
-
 
 int main(void)
 {
-    double a = 2.0, b = 3.0, c = 4.0, delta;
-    unsigned char nb_solutions;
+    unsigned long long int S1 = 1;
+    unsigned char n = 2;
 
-    delta = b*b - 4*a*c;
+    while(n<50)
+    {
+        S1 = S1 * n;
+        n = n + 1;
+    }
 
-    if( fabs(delta) < ECART )
-        nb_solutions = 1;
-    else if (delta > 0.0)
-        nb_solutions = 2;
-    else
-        nb_solutions = 0;
-
-        return 0;
+    return 0;
 }
