@@ -3,7 +3,6 @@
 #include "my_header.h"
 #include "TP_lib.h"
 
-
 void main(void)
 {
 	short resultat , i=0;
@@ -14,4 +13,3 @@ void main(void)
 		i=i+1;
 	}
 }
-	
