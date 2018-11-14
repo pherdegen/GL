@@ -1,6 +1,6 @@
 /****************************************************
 *                                                   *
-*      TP_lib  pour Thèmes Génie Logiciel  1 et 2   *
+*      TP_lib  pour Thï¿½mes Gï¿½nie Logiciel  1 et 2   *
 *                 GL1 + GL2							* 
 *													*
 *****************************************************
@@ -18,7 +18,7 @@ Fichier : TP_lib.h
 /*************************** calculer_max_2_entiers **************************/
 long int  calculer_max_2_entiers ( long int a, long int b ) 
 	{
-	/* définition des variables locales */
+	/* dï¿½finition des variables locales */
 	long int max2 ;
 	
 	/* traitement : */    
@@ -31,7 +31,7 @@ long int  calculer_max_2_entiers ( long int a, long int b )
 	
 double saisir_montant ( void )
 	{
-	/* définition des variables locales */
+	/* dï¿½finition des variables locales */
 	double montant ;
 	
 	/* traitement : */   
@@ -44,20 +44,20 @@ double saisir_montant ( void )
 
 void afficher_remise ( double montant_final, double remise )
 	{
-	/* définition des variables locales */
+	/* dï¿½finition des variables locales */
 //	double montant ;
 	
 	/* traitement : */
 	printf("\n Apres remise de %8.2lf euros, le prix a payer est %8.2lf euros.", remise, montant_final );
 	}
 	
-	/* 1er argument = montant APRES déduction de la remise */
+	/* 1er argument = montant APRES dï¿½duction de la remise */
 	
 /*************************** extraire_un_chiffre **************************/
 
 long extraire_un_chiffre ( long Nbre , long PositionChiffre )   
 	{
-	/* définition des variables locales */
+	/* dï¿½finition des variables locales */
 	long int chiffre, i ;
 	
 	/* traitement : */    
@@ -70,11 +70,11 @@ long extraire_un_chiffre ( long Nbre , long PositionChiffre )
 
 #ifdef AGNES_VERSION
 /**************************** inserer_un_chiffre ****************************/
-// position à insérer supposée nulle.
+// position ï¿½ insï¿½rer supposï¿½e nulle.
 
 long int inserer_un_chiffre( long Chiffre, long Nbre, long Position )
 	{
-	/* définition des variables locales */
+	/* dï¿½finition des variables locales */
 	long Nbre_apres_insertion, i ;
 	
 	/* traitement : */    
@@ -87,11 +87,11 @@ long int inserer_un_chiffre( long Chiffre, long Nbre, long Position )
 
 #else /*AGNES_VERSION*/
 /**************************** inserer_un_chiffre ****************************/
-// position à insérer prealablement effacee.
+// position ï¿½ insï¿½rer prealablement effacee.
 
 long int inserer_un_chiffre(long Nbre, long Chiffre, long Position )
    {
-   /* définition des variables locales */
+   /* dï¿½finition des variables locales */
    long Nbre_apres_insertion, i ;
    long Chiffre_origine; /** SbM : Ajout */
      
@@ -110,7 +110,7 @@ long int inserer_un_chiffre(long Nbre, long Chiffre, long Position )
 #endif /* AGNES_VERSION */
 
 /******************************************************************************
- Bibliotheque pour le lancer aléatoire d'un dé (valeurs obtenues entre 1 et 6)
+ Bibliotheque pour le lancer alï¿½atoire d'un dï¿½ (valeurs obtenues entre 1 et 6)
 *******************************************************************************/
 
 short int LancerDe( void )
@@ -120,7 +120,7 @@ short int LancerDe( void )
 	time_t temps ;
 	static short premier_appel =1;
 
-	if (premier_appel==1) 	   /* pour éviter de démarrer tjs de la meme facon */
+	if (premier_appel==1) 	   /* pour ï¿½viter de dï¿½marrer tjs de la meme facon */
 		{
 		srand(time(&temps));
 		premier_appel = 2;
@@ -201,7 +201,7 @@ int testerNombre(long nombre)
   {
     c=getchar();
 #ifdef DEBUG
-    printf("Code touche enfoncée : %d\n", c);
+    printf("Code touche enfoncï¿½e : %d\n", c);
 #endif
   }
   
