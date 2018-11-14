@@ -1,15 +1,63 @@
-//EX 44//
+//Ex 45//
 
 #include "my_header.h"
 #include "TP_lib.h"
+#include <stdio.h>
 
-void main(void)
+
+
+int main(void)
+
 {
-	short resultat , i=0;
 
-	while(i<10)
+	short int score=0 ,i=0;
+
+	printf("C'est ton tour");
+
+	i= LancerDe();
+
+	if(i==1)
+
 	{
-		resultat=LancerDe();
-		i=i+1;
+
+		printf("Tu perds la main");
+
 	}
+
+	else
+
+	{
+	    while(i!=1)
+	{
+
+		if(i==2||i==4||i==6)
+
+		{
+			score= score+i;
+		}
+
+		else if(i==3)
+
+		{
+			score= score * 3;
+		}
+		
+		else if(i==5&&score>=2)
+		{
+			score= score-2;
+		}
+		
+		else if(i==5&&score<2)
+		{
+			i=LancerDe();
+		}
+			i=LancerDe();
+	}
+
+	printf("Tu perds la main, ton score est %d",score);
+
+	return 0;
+
+	}
+
 }
