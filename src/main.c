@@ -1,9 +1,15 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
+//EX 44//
 
 #include "my_header.h"
+#include "TP_lib.h"
 
-int main(void)
+void main(void)
 {
-        return 0;
+	short resultat , i=0;
+
+	while(i<10)
+	{
+		resultat=LancerDe();
+		i=i+1;
+	}
 }
