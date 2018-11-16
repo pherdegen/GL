@@ -56,8 +56,7 @@ int main(void)
 
 	printf("Tu perds la main, ton score est %d",score);
 
-	return 0;
-
 	}
 
 }
+return 0;
