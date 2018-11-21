@@ -25,7 +25,7 @@ int main(void)
 
 for(i=0; i<10; i++)
 {
-	if (bin[i]<Seuil)
+	if (bin[i]<SEUIL)
 	{
 		bin[i]=0;
 	}
