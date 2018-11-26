@@ -69,7 +69,7 @@ for(i4=0;i4<5;i4++)
 
 for(i5=0;i5<2;i5++)
 {
-	mirroir[i5+2]=mirroir[1-i5];
+	mirroir[i5+2]=mirroir[-i5+2-1];
 }
 	return 0; 
 }
