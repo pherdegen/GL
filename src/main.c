@@ -1,26 +1,46 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
+//  Copyright (c) 2018 Antoine Tran Tan	//
 
 #include "my_header.h"
-#include <stdio.h>
-#include <math.h>
-
-#define ECART 1e-10
-
+#include "TP_lib_suite.h"
 
 int main(void)
-{
-    double a = 2.0, b = 3.0, c = 4.0, delta;
-    unsigned char nb_solutions;
+    {
+	 unsigned char combinaison1 [6]={32,5,23,2,13,22};
+	 unsigned char combinaison2 [6]={1,32,13,17,12,5};  
+	 unsigned char bon_numero=0;
+	 unsigned char meilleurscore=0;
+	 unsigned char score[100];	
+	 int i1,i2,a,b,c;
+	 
+	 initialiserTirage();  
+	 for(a=0;a<100;a++)
+		{
+		for(i2=0;i2<6;i2++)
+		combinaison2[i2]=tirerNumero();
+		
+	 	for (i1=0;i1<6;i1++)
+			{
+			for(b=0;b<6;b++)
+				{
+				if(combinaison1[i1]==combinaison2[b])
+				bon_numero++;
+				}
+				score[a]=bon_numero;
+			}
+		}
+		meilleurscore=score[1];
+		
+		for(c=2;c<100;c++)
+			{    
+			if (meilleurscore>>score[c])
 
-    delta = b*b - 4*a*c;
+			meilleurscore=meilleurscore;
 
-    if( fabs(delta) < ECART )
-        nb_solutions = 1;
-    else if (delta > 0.0)
-        nb_solutions = 2;
-    else
-        nb_solutions = 0;
+	     	else
 
-        return 0;
-}
+			meilleurscore=score[c];
+			}
+		return 0;
+	}
+
+	 
